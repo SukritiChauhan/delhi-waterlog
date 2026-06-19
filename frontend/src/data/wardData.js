@@ -1,0 +1,432 @@
+export const actualWardCoordinates = [
+  { wardNo: "CANT_1", wardName: "DELHI CANTT CHARGE 1", lng: 77.13054954550006, lat: 28.622003401500052 },
+  { wardNo: "CANT_2", wardName: "DELHI CANTT CHARGE 2", lng: 77.13936651000006, lat: 28.610229239500057 },
+  { wardNo: "CANT_3", wardName: "DELHI CANTT CHARGE 3", lng: 77.14784660650005, lat: 28.593773734500076 },
+  { wardNo: "CANT_4", wardName: "DELHI CANTT CHARGE 4", lng: 77.14334604650006, lat: 28.56592405850003 },
+  { wardNo: "CANT_5", wardName: "DELHI CANTT CHARGE 5", lng: 77.13384187100004, lat: 28.57474325700005 },
+  { wardNo: "CANT_6", wardName: "DELHI CANTT CHARGE 6", lng: 77.10626808300006, lat: 28.573183573500074 },
+  { wardNo: "CANT_7", wardName: "DELHI CANTT CHARGE 7", lng: 77.11005448200007, lat: 28.59485790000005 },
+  { wardNo: "CANT_8", wardName: "DELHI CANTT CHARGE 8", lng: 77.12360107650005, lat: 28.600375404500056 },
+  { wardNo: "NDMC_1", wardName: "NDMC CHARGE 1", lng: 77.22864108300004, lat: 28.616813283000056 },
+  { wardNo: "NDMC_2", wardName: "NDMC CHARGE 2", lng: 77.21272293600006, lat: 28.63741817500005 },
+  { wardNo: "NDMC_3", wardName: "NDMC CHARGE 3", lng: 77.18619568550005, lat: 28.619796772500052 },
+  { wardNo: "NDMC_4", wardName: "NDMC CHARGE 4", lng: 77.21527864300003, lat: 28.62117535750005 },
+  { wardNo: "NDMC_5", wardName: "NDMC CHARGE 5", lng: 77.22106828500006, lat: 28.60168441850007 },
+  { wardNo: "NDMC_6", wardName: "NDMC CHARGE 6", lng: 77.21827901600005, lat: 28.58489630650007 },
+  { wardNo: "NDMC_7", wardName: "NDMC CHARGE 7", lng: 77.20409910950005, lat: 28.570621317000047 },
+  { wardNo: "NDMC_8", wardName: "NDMC CHARGE 8", lng: 77.19661165150006, lat: 28.577248492000052 },
+  { wardNo: "NDMC_9", wardName: "NDMC CHARGE 9", lng: 77.18965869100006, lat: 28.58928413250004 },
+  { wardNo: "1", wardName: "NARELA", lng: 77.11346808000005, lat: 28.844765256000045 },
+  { wardNo: "2", wardName: "BANKNER", lng: 77.07670003600003, lat: 28.852885344500066 },
+  { wardNo: "3", wardName: "ALIPUR", lng: 77.10512273150007, lat: 28.791734201000054 },
+  { wardNo: "4", wardName: "BAKHTAWAR PUR", lng: 77.16921303500004, lat: 28.818902421000047 },
+  { wardNo: "5", wardName: "BHALASWA JAHAGIR PUR", lng: 77.15652433200006, lat: 28.761972933000038 },
+  { wardNo: "6", wardName: "MUKUND PUR", lng: 77.18875139250005, lat: 28.747376305000074 },
+  { wardNo: "7", wardName: "BURARI", lng: 77.20195213550005, lat: 28.76756720100005 },
+  { wardNo: "8", wardName: "JHARODA", lng: 77.21320802600007, lat: 28.74385380900003 },
+  { wardNo: "9", wardName: "MALKAGANJ", lng: 77.20786754200006, lat: 28.673632412000046 },
+  { wardNo: "10", wardName: "TIMAR PUR", lng: 77.21829698250005, lat: 28.701381185500054 },
+  { wardNo: "11", wardName: "MUKHERJEE NAGAR", lng: 77.21559305350004, lat: 28.713587780500035 },
+  { wardNo: "12", wardName: "G.T.B. NAGAR", lng: 77.20512318850007, lat: 28.699144944500063 },
+  { wardNo: "13", wardName: "DHIR PUR", lng: 77.19606367900005, lat: 28.720098870500067 },
+  { wardNo: "14", wardName: "ADARASH NAGAR", lng: 77.17403698800007, lat: 28.714340254000035 },
+  { wardNo: "15", wardName: "SARAI PIPAL THALA", lng: 77.16149650700007, lat: 28.724577638000056 },
+  { wardNo: "16", wardName: "JAHANGIRPURI-I", lng: 77.16875040300008, lat: 28.727268305500047 },
+  { wardNo: "17", wardName: "SAMAYPUR BADLI", lng: 77.14634641950008, lat: 28.737881851000054 },
+  { wardNo: "18", wardName: "LIBAS PUR", lng: 77.14651710000004, lat: 28.757729534500044 },
+  { wardNo: "19", wardName: "BHALSWA", lng: 77.16129887750006, lat: 28.743285249500076 },
+  { wardNo: "20", wardName: "JAHANGIR PURI -II", lng: 77.16807217500005, lat: 28.73239629950004 },
+  { wardNo: "21", wardName: "ROHINI", lng: 77.11532759300005, lat: 28.732450941500048 },
+  { wardNo: "22", wardName: "RITHALA", lng: 77.10760208150006, lat: 28.716766724500047 },
+  { wardNo: "23", wardName: "BUDH VIHAR", lng: 77.08692286350004, lat: 28.71562059550007 },
+  { wardNo: "24", wardName: "VIJAY VIHAR", lng: 77.09403302900006, lat: 28.708892069500052 },
+  { wardNo: "25", wardName: "POOTH KALAN", lng: 77.07399161500004, lat: 28.71854580750005 },
+  { wardNo: "26", wardName: "SAHIBABAD DAULAT PUR", lng: 77.10033920250007, lat: 28.745611759500065 },
+  { wardNo: "27", wardName: "BEGUMPUR", lng: 77.01401559550007, lat: 28.756514748500052 },
+  { wardNo: "28", wardName: "BAWANA", lng: 77.00657305300007, lat: 28.808736115000045 },
+  { wardNo: "29", wardName: "KARALA", lng: 77.00174011650006, lat: 28.738469518000045 },
+  { wardNo: "30", wardName: "MUNDAKA", lng: 76.99703743650005, lat: 28.68841292700006 },
+  { wardNo: "31", wardName: "NANGLOI JAT WEST", lng: 77.04872200600005, lat: 28.682999255000055 },
+  { wardNo: "32", wardName: "NILOTHI", lng: 77.05521682550005, lat: 28.668871240000044 },
+  { wardNo: "33", wardName: "PREM NAGAR", lng: 77.05830253850004, lat: 28.706390841500053 },
+  { wardNo: "34", wardName: "NITHARI", lng: 77.03709331500008, lat: 28.70460507000007 },
+  { wardNo: "35", wardName: "KIRARI SULEMAN NAGAR", lng: 77.05735930750004, lat: 28.697285730500028 },
+  { wardNo: "36", wardName: "PRATAP VIHAR", lng: 77.04940023450004, lat: 28.691466878000057 },
+  { wardNo: "37", wardName: "SULTANPURI EAST", lng: 77.07918836900006, lat: 28.69736105350006 },
+  { wardNo: "38", wardName: "MANGOL PURI NORTH", lng: 77.08697676250006, lat: 28.700091447000062 },
+  { wardNo: "39", wardName: "SULTANPUR MAJRA", lng: 77.07352449100006, lat: 28.697597383000044 },
+  { wardNo: "40", wardName: "SULTANPURI SOUTH", lng: 77.07011987650006, lat: 28.688819153500077 },
+  { wardNo: "41", wardName: "GURU HARKISHAN NAGAR", lng: 77.08493309550005, lat: 28.66629401250006 },
+  { wardNo: "42", wardName: "PERAGHARHI", lng: 77.08551250850007, lat: 28.67906270450004 },
+  { wardNo: "43", wardName: "NANGLOI EAST", lng: 77.06384065250003, lat: 28.673568869500016 },
+  { wardNo: "44", wardName: "QUAMMRUDDIN NAGAR", lng: 77.06361607350004, lat: 28.657066744000048 },
+  { wardNo: "45", wardName: "ROHINI SOUTH", lng: 77.10851836300006, lat: 28.702699175500044 },
+  { wardNo: "46", wardName: "MANGOLPURI EAST", lng: 77.09691662100005, lat: 28.69005622350005 },
+  { wardNo: "47", wardName: "MANGOLPURI", lng: 77.09149079700003, lat: 28.697357153500036 },
+  { wardNo: "48", wardName: "MANGOLPURI WEST", lng: 77.08373833600007, lat: 28.690087764000054 },
+  { wardNo: "49", wardName: "ROHINI NORTH", lng: 77.13329839050004, lat: 28.735002518500067 },
+  { wardNo: "50", wardName: "ROHINI CENTRAL", lng: 77.12435117000007, lat: 28.720213227500068 },
+  { wardNo: "51", wardName: "ROHINI EAST", lng: 77.12798485550005, lat: 28.709128334500065 },
+  { wardNo: "52", wardName: "NAHARPUR", lng: 77.11743863400008, lat: 28.71090526450007 },
+  { wardNo: "53", wardName: "PITAMPURA SOUTH", lng: 77.14407817350008, lat: 28.701308553000032 },
+  { wardNo: "54", wardName: "PITAMPUR NORTH", lng: 77.14407817350008, lat: 28.71774317750007 },
+  { wardNo: "55", wardName: "SHALIMAR BAGH NORTH", lng: 77.15431447650008, lat: 28.718578615500036 },
+  { wardNo: "56", wardName: "SHALIMAR BAGH SOUTH", lng: 77.16195464800003, lat: 28.70964052900004 },
+  { wardNo: "57", wardName: "PASCHIM VIHAR SOUTH", lng: 77.10273321300005, lat: 28.666987539000047 },
+  { wardNo: "58", wardName: "PASCHIM VIHAR NORTH", lng: 77.10450289350007, lat: 28.675965282500073 },
+  { wardNo: "59", wardName: "RANI BAGH", lng: 77.12689789350006, lat: 28.682857156500035 },
+  { wardNo: "60", wardName: "SARASWATI VIHAR", lng: 77.11308180500004, lat: 28.69125380250003 },
+  { wardNo: "61", wardName: "TRI NAGAR", lng: 77.16141565850006, lat: 28.677915995000063 },
+  { wardNo: "62", wardName: "RAMPURA", lng: 77.14604548400004, lat: 28.680788372500047 },
+  { wardNo: "63", wardName: "KOHAT ENCLAVE", lng: 77.13611460850007, lat: 28.693680802000046 },
+  { wardNo: "64", wardName: "SHAKUR PUR", lng: 77.14782863950006, lat: 28.690359588000064 },
+  { wardNo: "65", wardName: "NIMRI COLONY", lng: 77.17353842300005, lat: 28.682057468500062 },
+  { wardNo: "66", wardName: "SAWAN PARK", lng: 77.17957061050004, lat: 28.69199426250003 },
+  { wardNo: "67", wardName: "WAJIRPUR", lng: 77.16483823950006, lat: 28.689212780000048 },
+  { wardNo: "68", wardName: "ASHOK VIHAR", lng: 77.16668876900007, lat: 28.697620804500076 },
+  { wardNo: "69", wardName: "KAMLA NAGAR", lng: 77.19425806500007, lat: 28.677037136000052 },
+  { wardNo: "70", wardName: "RANA PRATAP BAGH", lng: 77.19438382950005, lat: 28.688527435000026 },
+  { wardNo: "71", wardName: "SANGAM PARK", lng: 77.18381964200006, lat: 28.69841666000005 },
+  { wardNo: "72", wardName: "MODEL TOWN", lng: 77.19122175950008, lat: 28.70116650500003 },
+  { wardNo: "73", wardName: "SHASTRI NAGAR", lng: 77.18098545700005, lat: 28.67380589700005 },
+  { wardNo: "74", wardName: "INDER LOK COLONY", lng: 77.17426156700003, lat: 28.66518275550007 },
+  { wardNo: "75", wardName: "KISHAN GANJ", lng: 77.19448264400006, lat: 28.667204899500064 },
+  { wardNo: "76", wardName: "DEPUTY GANJ", lng: 77.20752169050007, lat: 28.663685465000043 },
+  { wardNo: "77", wardName: "KASHMERE GATE", lng: 77.23073864900007, lat: 28.676169215000073 },
+  { wardNo: "78", wardName: "MAJNU KA TILA", lng: 77.21922224700006, lat: 28.683482030500073 },
+  { wardNo: "79", wardName: "JAMA MASJID", lng: 77.23521225900006, lat: 28.649992912000044 },
+  { wardNo: "80", wardName: "CHANDNI CHOWK", lng: 77.23341113700008, lat: 28.65769468950006 },
+  { wardNo: "81", wardName: "MINTO ROAD", lng: 77.23098568600005, lat: 28.636093620000054 },
+  { wardNo: "82", wardName: "KUCHA PANDIT", lng: 77.22614376650006, lat: 28.64775827750003 },
+  { wardNo: "83", wardName: "BAZAR SITARAM", lng: 77.23036135650005, lat: 28.64642200450004 },
+  { wardNo: "84", wardName: "TURKMAN GATE", lng: 77.23567938300005, lat: 28.64397417400005 },
+  { wardNo: "85", wardName: "IDGAH ROAD", lng: 77.21586703950004, lat: 28.652121558500056 },
+  { wardNo: "86", wardName: "BALLIMARAN", lng: 77.22560028550006, lat: 28.65324501850006 },
+  { wardNo: "87", wardName: "RAM NAGAR", lng: 77.21510347150007, lat: 28.64911024150004 },
+  { wardNo: "88", wardName: "QASABPURA", lng: 77.20886467150004, lat: 28.653887317000056 },
+  { wardNo: "89", wardName: "PAHAR GANJ", lng: 77.21091283100006, lat: 28.642696831500047 },
+  { wardNo: "90", wardName: "MODEL BASTI", lng: 77.20347478050004, lat: 28.652523299500047 },
+  { wardNo: "91", wardName: "KAROL BAGH", lng: 77.19159006900006, lat: 28.65503411450007 },
+  { wardNo: "92", wardName: "DEV NAGAR", lng: 77.18033867000005, lat: 28.653627315500046 },
+  { wardNo: "93", wardName: "BALJIT NAGAR", lng: 77.15934055000005, lat: 28.65607106400006 },
+  { wardNo: "94", wardName: "WEST PATEL NAGAR", lng: 77.16116413050005, lat: 28.658699731500064 },
+  { wardNo: "95", wardName: "EAST PATEL NAGAR", lng: 77.17402800550005, lat: 28.65342184450006 },
+  { wardNo: "96", wardName: "NEW RANJIT NAGAR", lng: 77.16072844750005, lat: 28.648250937500052 },
+  { wardNo: "97", wardName: "KIRTI NAGAR", lng: 77.14302265300006, lat: 28.655286106000034 },
+  { wardNo: "98", wardName: "MANSAROWER GARDEN", lng: 77.13362627500007, lat: 28.641896311500062 },
+  { wardNo: "99", wardName: "MOTI NAGAR", lng: 77.14709202100008, lat: 28.670345933500045 },
+  { wardNo: "100", wardName: "KARAM PURA", lng: 77.15581466250006, lat: 28.66573485850006 },
+  { wardNo: "101", wardName: "RAJA GARDEN", lng: 77.12482278550004, lat: 28.653847884000072 },
+  { wardNo: "102", wardName: "RAGHUBIR NAGAR", lng: 77.11489640150006, lat: 28.657284975500062 },
+  { wardNo: "103", wardName: "PUNJABI BAGH", lng: 77.12759857950007, lat: 28.66768154850007 },
+  { wardNo: "104", wardName: "MADIPUR", lng: 77.11529615200004, lat: 28.671007878500035 },
+  { wardNo: "105", wardName: "RAJOURI GARDEN", lng: 77.11813033650006, lat: 28.644967247000068 },
+  { wardNo: "106", wardName: "TAGORE GARDEN", lng: 77.10396839650005, lat: 28.64644555700005 },
+  { wardNo: "107", wardName: "VISHNU GARDEN", lng: 77.09602728900006, lat: 28.64853083400007 },
+  { wardNo: "108", wardName: "KHYALA", lng: 77.10372135950007, lat: 28.65227509600004 },
+  { wardNo: "109", wardName: "JANAK PURI NORTH", lng: 77.09653483750006, lat: 28.628729560000068 },
+  { wardNo: "110", wardName: "NANGAL RAYA", lng: 77.11025660300007, lat: 28.615178338000078 },
+  { wardNo: "111", wardName: "HARI NAGAR", lng: 77.12097350450006, lat: 28.62687242800004 },
+  { wardNo: "112", wardName: "SUBHASH NAGAR", lng: 77.11668854050006, lat: 28.636019093000044 },
+  { wardNo: "113", wardName: "MAHAVIR NAGAR", lng: 77.07578824600006, lat: 28.63351961300006 },
+  { wardNo: "114", wardName: "TILAK NAGAR", lng: 77.09533558600006, lat: 28.638478987500065 },
+  { wardNo: "115", wardName: "MAJOR BHUPINDAR SINGH NAGAR", lng: 77.09220046600007, lat: 28.65378091300005 },
+  { wardNo: "116", wardName: "VIKASPURI EAST", lng: 77.08343740000007, lat: 28.647533246500046 },
+  { wardNo: "117", wardName: "JANAK PURI WEST", lng: 77.07811937400007, lat: 28.622480533000044 },
+  { wardNo: "118", wardName: "JANAK PURI SOUTH", lng: 77.09706035200006, lat: 28.617051383000074 },
+  { wardNo: "119", wardName: "MILAP NAGAR", lng: 77.06256953600007, lat: 28.619389610500065 },
+  { wardNo: "120", wardName: "SITA PURI", lng: 77.07858200600006, lat: 28.611342052000055 },
+  { wardNo: "121", wardName: "KUNWAR SINGH NAGAR", lng: 77.04016555300007, lat: 28.643665119000048 },
+  { wardNo: "122", wardName: "HASTSAL", lng: 77.02585089900006, lat: 28.646396557500054 },
+  { wardNo: "123", wardName: "VIKAS PURI", lng: 77.05907508950006, lat: 28.62783470200003 },
+  { wardNo: "124", wardName: "VIKAS NAGAR", lng: 77.06866011400007, lat: 28.640244761000048 },
+  { wardNo: "125", wardName: "MOHAN GARDEN", lng: 77.03315869400004, lat: 28.62733005250007 },
+  { wardNo: "126", wardName: "NAWADA", lng: 77.04030479200006, lat: 28.62323780750006 },
+  { wardNo: "127", wardName: "UTTAM NAGAR", lng: 77.04390703600006, lat: 28.617414386000036 },
+  { wardNo: "128", wardName: "BINDAPUR", lng: 77.06794595300005, lat: 28.613313480000073 },
+  { wardNo: "129", wardName: "DABRI", lng: 77.09459447600005, lat: 28.60763153350004 },
+  { wardNo: "130", wardName: "MANGLAPURI", lng: 77.08376528550005, lat: 28.596120062500063 },
+  { wardNo: "131", wardName: "SAGARPUR", lng: 77.10251312500006, lat: 28.60128279150004 },
+  { wardNo: "132", wardName: "SAGARPUR WEST", lng: 77.09880757500005, lat: 28.603550260000077 },
+  { wardNo: "133", wardName: "CHHAWLA", lng: 76.95184768600006, lat: 28.544827347500046 },
+  { wardNo: "134", wardName: "NANGLI SAKRAVATI", lng: 76.99819626300004, lat: 28.579979940000044 },
+  { wardNo: "135", wardName: "KAKRAULA", lng: 77.02826736750006, lat: 28.60032636400004 },
+  { wardNo: "136", wardName: "MATIALA", lng: 77.05183916000007, lat: 28.587412344000057 },
+  { wardNo: "137", wardName: "ROSHANPURA", lng: 76.99549233400003, lat: 28.609814082500066 },
+  { wardNo: "138", wardName: "NAJAFGARH", lng: 76.97837942800004, lat: 28.612986173000053 },
+  { wardNo: "139", wardName: "DICHAON KALAN", lng: 76.97009246950006, lat: 28.64130161500006 },
+  { wardNo: "140", wardName: "KHERA", lng: 76.90937084800004, lat: 28.581362037000076 },
+  { wardNo: "141", wardName: "BIJWASAN", lng: 77.04413610700004, lat: 28.54867316900004 },
+  { wardNo: "142", wardName: "RAJ NAGAR", lng: 77.08300620900008, lat: 28.57320547650005 },
+  { wardNo: "143", wardName: "KAPASHERA", lng: 77.09143240650008, lat: 28.542216852000053 },
+  { wardNo: "144", wardName: "MAHIPALPUR", lng: 77.12939970200006, lat: 28.537370125500047 },
+  { wardNo: "145", wardName: "PALAM", lng: 77.08062567350007, lat: 28.584880287500027 },
+  { wardNo: "146", wardName: "SADH NAGAR", lng: 77.09556914850006, lat: 28.594787629500075 },
+  { wardNo: "147", wardName: "MAHAVIR ENCLAVE", lng: 77.06915867900005, lat: 28.596806453000056 },
+  { wardNo: "148", wardName: "MADHU VIHAR", lng: 77.05755693700004, lat: 28.60878690000007 },
+  { wardNo: "149", wardName: "RAJENDER NAGAR", lng: 77.18091359200005, lat: 28.637063024000042 },
+  { wardNo: "150", wardName: "PUSA", lng: 77.16065209050007, lat: 28.629136663000054 },
+  { wardNo: "151", wardName: "INDER PURI", lng: 77.14846644350007, lat: 28.63162714400005 },
+  { wardNo: "152", wardName: "NARAINA", lng: 77.13831548100003, lat: 28.62926924000007 },
+  { wardNo: "153", wardName: "DARYAGANJ", lng: 77.24832766200007, lat: 28.632189574500046 },
+  { wardNo: "154", wardName: "NIZAMUDDIN", lng: 77.25271593250005, lat: 28.601169540500052 },
+  { wardNo: "155", wardName: "LAJPAT NAGAR", lng: 77.24566864950006, lat: 28.573706156000043 },
+  { wardNo: "156", wardName: "BHOGAL", lng: 77.25545130250006, lat: 28.57875105000005 },
+  { wardNo: "157", wardName: "KASTURBA NAGAR", lng: 77.23347851050005, lat: 28.582580755000038 },
+  { wardNo: "158", wardName: "KOTLA MUBARAKPUR", lng: 77.21857546000004, lat: 28.57395874200006 },
+  { wardNo: "159", wardName: "ANDREWSGANJ", lng: 77.22793590500004, lat: 28.56615166250006 },
+  { wardNo: "160", wardName: "AMAR COLONY", lng: 77.24321624850006, lat: 28.56444415650006 },
+  { wardNo: "161", wardName: "MALVIYA NAGAR", lng: 77.19502163350006, lat: 28.53885420700007 },
+  { wardNo: "162", wardName: "HAUZ RANI", lng: 77.21164495800005, lat: 28.53445103100006 },
+  { wardNo: "163", wardName: "SAFDARJANG ENCLAVE", lng: 77.19561452150006, lat: 28.557934453500053 },
+  { wardNo: "164", wardName: "HAUZ KHAS", lng: 77.20876585700006, lat: 28.555078188500033 },
+  { wardNo: "165", wardName: "VASANT VIHAR", lng: 77.16106531550005, lat: 28.560293127500046 },
+  { wardNo: "166", wardName: "MUNIRKA", lng: 77.17847466550006, lat: 28.55715378800005 },
+  { wardNo: "167", wardName: "R. K. PURAM", lng: 77.17902263850004, lat: 28.568167710500063 },
+  { wardNo: "168", wardName: "NANAK PURA", lng: 77.16678309250005, lat: 28.57803618150004 },
+  { wardNo: "169", wardName: "LADOSARAI", lng: 77.19081302650005, lat: 28.52458834300006 },
+  { wardNo: "170", wardName: "MEHRAULI", lng: 77.18737247850004, lat: 28.51627412950006 },
+  { wardNo: "171", wardName: "VASANTKUNJ", lng: 77.16382314350005, lat: 28.539426004000063 },
+  { wardNo: "172", wardName: "KISHANGARH", lng: 77.13533307450007, lat: 28.513564937500064 },
+  { wardNo: "173", wardName: "DEOLI", lng: 77.20532530950007, lat: 28.49815921700005 },
+  { wardNo: "174", wardName: "CHHATARPUR", lng: 77.15685221650006, lat: 28.49653009550005 },
+  { wardNo: "175", wardName: "AYA NAGAR", lng: 77.15480855000007, lat: 28.44750415750005 },
+  { wardNo: "176", wardName: "BHATI", lng: 77.20545556500005, lat: 28.449811010000047 },
+  { wardNo: "177", wardName: "SAID UL AJAIB", lng: 77.22531731600006, lat: 28.472945735500048 },
+  { wardNo: "178", wardName: "SANGAM VIHAR", lng: 77.22336797200003, lat: 28.48493264250004 },
+  { wardNo: "179", wardName: "TIGRI", lng: 77.22925642850007, lat: 28.500387287000052 },
+  { wardNo: "180", wardName: "DAKSHINPURI EXT.", lng: 77.24080427200005, lat: 28.52677582900003 },
+  { wardNo: "181", wardName: "KHANPUR", lng: 77.22485019200005, lat: 28.510874765500063 },
+  { wardNo: "182", wardName: "AMBEDKAR NAGAR", lng: 77.23261163650005, lat: 28.51662565350003 },
+  { wardNo: "183", wardName: "MADANGIR", lng: 77.23522124250005, lat: 28.520548553000054 },
+  { wardNo: "184", wardName: "PUSHP VIHAR", lng: 77.22397433450007, lat: 28.52436445750004 },
+  { wardNo: "185", wardName: "TUGHLAKABAD EXTN", lng: 77.25100913350008, lat: 28.517031800500035 },
+  { wardNo: "186", wardName: "SANGAM VIHAR WEST", lng: 77.24949547250006, lat: 28.494047336500074 },
+  { wardNo: "187", wardName: "SANGAM VIHAR CENTRAL", lng: 77.25160202150005, lat: 28.494004846500047 },
+  { wardNo: "188", wardName: "SANGAM VIHAR EAST", lng: 77.26055373350005, lat: 28.49867001900006 },
+  { wardNo: "189", wardName: "CHIRAG DELHI", lng: 77.23452953950007, lat: 28.53430495750007 },
+  { wardNo: "190", wardName: "CHITRANJAN PARK", lng: 77.24946403100006, lat: 28.533160299500054 },
+  { wardNo: "191", wardName: "SHAPUR JAT", lng: 77.22688487650007, lat: 28.54270910100007 },
+  { wardNo: "192", wardName: "GREATER KAILASH-I", lng: 77.24454575500005, lat: 28.55229314050004 },
+  { wardNo: "193", wardName: "SRI NIWASPURI", lng: 77.26846339950006, lat: 28.559953817000064 },
+  { wardNo: "194", wardName: "EAST OF KAILASH", lng: 77.25849659100004, lat: 28.55114480000006 },
+  { wardNo: "195", wardName: "GOVIND PURI", lng: 77.26236833050007, lat: 28.53071420550006 },
+  { wardNo: "196", wardName: "KALKAJI", lng: 77.26038305350005, lat: 28.538053622000064 },
+  { wardNo: "197", wardName: "TUGHLAKABAD", lng: 77.27683569750005, lat: 28.515653518500073 },
+  { wardNo: "198", wardName: "PUL PEHLAD", lng: 77.28180338150005, lat: 28.495859838500053 },
+  { wardNo: "199", wardName: "TEKHAND", lng: 77.28598953050005, lat: 28.51208056850004 },
+  { wardNo: "200", wardName: "HARKESH NAGAR", lng: 77.27539390200005, lat: 28.54036968050005 },
+  { wardNo: "201", wardName: "JAITPUR", lng: 77.32807111000008, lat: 28.509264578000028 },
+  { wardNo: "202", wardName: "MEETHEYPUR", lng: 77.32520548450003, lat: 28.496104631000037 },
+  { wardNo: "203", wardName: "BADAR PUR", lng: 77.30423880550006, lat: 28.501882979000044 },
+  { wardNo: "204", wardName: "MOLARBAND", lng: 77.31191940100007, lat: 28.495954346500042 },
+  { wardNo: "205", wardName: "ZAKIR NAGAR", lng: 77.27803944000004, lat: 28.571938965000044 },
+  { wardNo: "206", wardName: "OKHLA", lng: 77.28411654300007, lat: 28.560313318000055 },
+  { wardNo: "207", wardName: "MADANPUR KHADAR", lng: 77.32044441350007, lat: 28.52499137950005 },
+  { wardNo: "208", wardName: "SARITA VIHAR", lng: 77.30405015950004, lat: 28.536478395000046 },
+  { wardNo: "209", wardName: "MAYUR VIHAR PHASE-I", lng: 77.30056918800005, lat: 28.604318893000027 },
+  { wardNo: "210", wardName: "DALLOPURA", lng: 77.31266500300006, lat: 28.608250539500062 },
+  { wardNo: "211", wardName: "TRILOK PURI", lng: 77.28867998500004, lat: 28.596742510500064 },
+  { wardNo: "212", wardName: "NEW ASHOK NAGAR", lng: 77.30286887500002, lat: 28.594771583000067 },
+  { wardNo: "213", wardName: "KALYAN PURI", lng: 77.31532850750006, lat: 28.61572682350004 },
+  { wardNo: "214", wardName: "KHICHRIPUR", lng: 77.32069594150005, lat: 28.61317017400006 },
+  { wardNo: "215", wardName: "KONDLI", lng: 77.33170479550006, lat: 28.61107365850006 },
+  { wardNo: "216", wardName: "GHAROLI", lng: 77.33477254200005, lat: 28.617611030000035 },
+  { wardNo: "217", wardName: "VINOD NAGAR", lng: 77.29511192200007, lat: 28.622248159000065 },
+  { wardNo: "218", wardName: "MANDAWALI", lng: 77.29539938300007, lat: 28.62894648750006 },
+  { wardNo: "219", wardName: "MAYUR VIHAR PHASE II", lng: 77.30486313500006, lat: 28.619921813500042 },
+  { wardNo: "220", wardName: "PATPARGANJ", lng: 77.29004093250003, lat: 28.609054674500044 },
+  { wardNo: "221", wardName: "KISHAN KUNJ", lng: 77.27271692250005, lat: 28.635845464000056 },
+  { wardNo: "222", wardName: "LAXMI NAGAR", lng: 77.27954411800005, lat: 28.63754071400004 },
+  { wardNo: "223", wardName: "SHAKARPUR", lng: 77.28536071000005, lat: 28.62828014400006 },
+  { wardNo: "224", wardName: "PANDAV NAGAR", lng: 77.27838978300008, lat: 28.620765362500066 },
+  { wardNo: "225", wardName: "ANAND VIHAR", lng: 77.30857317700006, lat: 28.65690612150007 },
+  { wardNo: "226", wardName: "VISHWASH NAGAR", lng: 77.29480649500005, lat: 28.66163592250004 },
+  { wardNo: "227", wardName: "I.P EXTENTION", lng: 77.31436281850003, lat: 28.638276851500052 },
+  { wardNo: "228", wardName: "PREET VIHAR", lng: 77.29541285800008, lat: 28.640831657000035 },
+  { wardNo: "229", wardName: "KRISHNA NAGAR", lng: 77.27669645900005, lat: 28.65361507150007 },
+  { wardNo: "230", wardName: "GEETA COLONY", lng: 77.27424405850007, lat: 28.64931116850005 },
+  { wardNo: "231", wardName: "GHONDLI", lng: 77.28357755400006, lat: 28.650217729500042 },
+  { wardNo: "232", wardName: "ANARKALI", lng: 77.29007237350007, lat: 28.650296654000044 },
+  { wardNo: "233", wardName: "DHARAMPURA", lng: 77.25863133850004, lat: 28.666554539500055 },
+  { wardNo: "234", wardName: "GANDHI NAGAR", lng: 77.26007762650005, lat: 28.661375972500053 },
+  { wardNo: "235", wardName: "AZAD NAGAR", lng: 77.27870419350006, lat: 28.665407815000066 },
+  { wardNo: "236", wardName: "RAGHUBAR PURA", lng: 77.27184106450005, lat: 28.666282593000034 },
+  { wardNo: "237", wardName: "SHAHDARA", lng: 77.28696869400008, lat: 28.667961608500036 },
+  { wardNo: "238", wardName: "JHILMIL", lng: 77.30268472000003, lat: 28.669266105000048 },
+  { wardNo: "239", wardName: "VIVEK VIHAR", lng: 77.31061235250004, lat: 28.675165197500036 },
+  { wardNo: "240", wardName: "DILSHAD COLONY", lng: 77.32622058050003, lat: 28.681501905500056 },
+  { wardNo: "241", wardName: "DILSHAD GARDEN", lng: 77.31000149800008, lat: 28.684949477500055 },
+  { wardNo: "242", wardName: "NEW SEEMA PURI", lng: 77.32383555350006, lat: 28.688188646500038 },
+  { wardNo: "243", wardName: "NAND NAGRI", lng: 77.30756257200005, lat: 28.69463467500006 },
+  { wardNo: "244", wardName: "SUNDER NAGARI", lng: 77.31693200050003, lat: 28.694611062000064 },
+  { wardNo: "245", wardName: "DURGA PURI", lng: 77.29862882650008, lat: 28.68844075900006 },
+  { wardNo: "246", wardName: "ASHOK NAGAR", lng: 77.29672889000005, lat: 28.695146820500042 },
+  { wardNo: "247", wardName: "RAM NAGAR", lng: 77.29059339650007, lat: 28.678731633500036 },
+  { wardNo: "248", wardName: "WELCOME COLONY", lng: 77.28037955150006, lat: 28.67911780350005 },
+  { wardNo: "249", wardName: "CHAUHAN BANGER", lng: 77.27113588700004, lat: 28.682427868500042 },
+  { wardNo: "250", wardName: "ZAFFRABAD", lng: 77.26716084200004, lat: 28.67431823900003 },
+  { wardNo: "251", wardName: "NEW USMANPUR", lng: 77.25843820050008, lat: 28.67822325150007 },
+  { wardNo: "252", wardName: "MAUJPUR", lng: 77.27541635950007, lat: 28.689303732500036 },
+  { wardNo: "253", wardName: "BHAJANPURA", lng: 77.25856396500006, lat: 28.697680073500038 },
+  { wardNo: "254", wardName: "BRAHAM PURI", lng: 77.25795760250006, lat: 28.688153164000056 },
+  { wardNo: "255", wardName: "GHONDA", lng: 77.26524293900005, lat: 28.690501515500046 },
+  { wardNo: "256", wardName: "YAMUNA VIHAR", lng: 77.27180513250005, lat: 28.699874752000056 },
+  { wardNo: "257", wardName: "SUBHASH MOHALLA", lng: 77.27406888700006, lat: 28.69452045050005 },
+  { wardNo: "258", wardName: "KARDAM PURI", lng: 77.28429171450006, lat: 28.69389378300005 },
+  { wardNo: "259", wardName: "JANTA COLONY", lng: 77.27925216600005, lat: 28.683984365500066 },
+  { wardNo: "260", wardName: "BABAR PUR", lng: 77.28541011700005, lat: 28.686998654000064 },
+  { wardNo: "261", wardName: "JIWANPUR", lng: 77.28263881450005, lat: 28.71335524850005 },
+  { wardNo: "262", wardName: "GOKALPUR", lng: 77.28881024050006, lat: 28.70728502500006 },
+  { wardNo: "263", wardName: "SABOLI", lng: 77.30622857400007, lat: 28.706634906000062 },
+  { wardNo: "264", wardName: "HARSH VIHAR", lng: 77.31859837550004, lat: 28.705776097500035 },
+  { wardNo: "265", wardName: "SHIV VIHAR", lng: 77.27925665800007, lat: 28.725763371000056 },
+  { wardNo: "266", wardName: "KARAWAL NAGAR EAST", lng: 77.27201623650006, lat: 28.719394334500066 },
+  { wardNo: "267", wardName: "NEHRU VIHAR", lng: 77.26406614650006, lat: 28.708664044000045 },
+  { wardNo: "268", wardName: "MUSTAFABAD", lng: 77.26973900700006, lat: 28.709916568500034 },
+  { wardNo: "269", wardName: "KHAJOORI KHAS", lng: 77.26077382050005, lat: 28.707962744000042 },
+  { wardNo: "270", wardName: "TUKHMIR PUR", lng: 77.26258392600005, lat: 28.71385603400006 },
+  { wardNo: "271", wardName: "KARAWAL NAGAR WEST", lng: 77.26758305050004, lat: 28.726637753500057 },
+  { wardNo: "272", wardName: "SONIA VIHAR", lng: 77.25078006300006, lat: 28.732074320000066 },
+]
+
+export const rainfallData = {
+  "DEL_CANTT_001": { annual_avg: 679.5, jan_2026: 14 },
+  "DEL_CANTT_002": { annual_avg: 679.5, jan_2026: 14 },
+  "DEL_CANTT_003": { annual_avg: 679.5, jan_2026: 14 },
+  "DEL_CANTT_004": { annual_avg: 679.5, jan_2026: 14 },
+  "DEL_CANTT_005": { annual_avg: 679.5, jan_2026: 14 },
+  "DEL_CANTT_006": { annual_avg: 679.5, jan_2026: 14 },
+  "DEL_CANTT_007": { annual_avg: 679.5, jan_2026: 14 },
+  "DEL_CANTT_008": { annual_avg: 679.5, jan_2026: 14 },
+  "DEL_NDMC_001": { annual_avg: 714.2, jan_2026: 16 },
+  "DEL_NDMC_002": { annual_avg: 714.2, jan_2026: 16 },
+  "DEL_NDMC_003": { annual_avg: 714.2, jan_2026: 16 },
+  "DEL_NDMC_004": { annual_avg: 714.2, jan_2026: 16 },
+  "DEL_NDMC_005": { annual_avg: 714.2, jan_2026: 16 },
+  "DEL_NDMC_006": { annual_avg: 714.2, jan_2026: 16 },
+  "DEL_NDMC_007": { annual_avg: 714.2, jan_2026: 16 },
+  "DEL_NDMC_008": { annual_avg: 714.2, jan_2026: 16 },
+  "DEL_NDMC_009": { annual_avg: 714.2, jan_2026: 16 },
+}
+
+export const drainageData = {
+  "DEL_CANTT_001": { capacity_score: 78, flood_risk: 25, flood_events: 2, system_age: 35, sewage_coverage: 88 },
+  "DEL_CANTT_002": { capacity_score: 75, flood_risk: 28, flood_events: 3, system_age: 32, sewage_coverage: 85 },
+  "DEL_CANTT_003": { capacity_score: 80, flood_risk: 22, flood_events: 1, system_age: 38, sewage_coverage: 90 },
+  "DEL_CANTT_004": { capacity_score: 72, flood_risk: 32, flood_events: 4, system_age: 30, sewage_coverage: 82 },
+  "DEL_CANTT_005": { capacity_score: 77, flood_risk: 26, flood_events: 2, system_age: 34, sewage_coverage: 87 },
+  "DEL_CANTT_006": { capacity_score: 74, flood_risk: 30, flood_events: 3, system_age: 31, sewage_coverage: 84 },
+  "DEL_CANTT_007": { capacity_score: 79, flood_risk: 24, flood_events: 2, system_age: 36, sewage_coverage: 89 },
+  "DEL_CANTT_008": { capacity_score: 76, flood_risk: 27, flood_events: 2, system_age: 33, sewage_coverage: 86 },
+  "DEL_NDMC_001": { capacity_score: 85, flood_risk: 18, flood_events: 1, system_age: 25, sewage_coverage: 95 },
+  "DEL_NDMC_002": { capacity_score: 83, flood_risk: 20, flood_events: 1, system_age: 28, sewage_coverage: 93 },
+  "DEL_NDMC_003": { capacity_score: 86, flood_risk: 17, flood_events: 1, system_age: 24, sewage_coverage: 96 },
+  "DEL_NDMC_004": { capacity_score: 84, flood_risk: 19, flood_events: 1, system_age: 26, sewage_coverage: 94 },
+  "DEL_NDMC_005": { capacity_score: 82, flood_risk: 21, flood_events: 2, system_age: 29, sewage_coverage: 92 },
+  "DEL_NDMC_006": { capacity_score: 87, flood_risk: 16, flood_events: 1, system_age: 23, sewage_coverage: 97 },
+  "DEL_NDMC_007": { capacity_score: 81, flood_risk: 22, flood_events: 2, system_age: 30, sewage_coverage: 91 },
+  "DEL_NDMC_008": { capacity_score: 88, flood_risk: 15, flood_events: 1, system_age: 22, sewage_coverage: 98 },
+  "DEL_NDMC_009": { capacity_score: 85, flood_risk: 18, flood_events: 1, system_age: 25, sewage_coverage: 95 },
+}
+
+export function calculateRiskScore(wardNo, coord, index) {
+  let wardKey = ""
+  if (index < 8) wardKey = `DEL_CANTT_00${index + 1}`
+  else if (index < 17) wardKey = `DEL_NDMC_00${index - 7}`
+  else {
+    const wardNum = coord.wardNo.toString().padStart(3, '0')
+    wardKey = `DEL_${wardNum}`
+  }
+
+  const rain = rainfallData[wardKey] || { annual_avg: 700, jan_2026: 15 }
+  const drain = drainageData[wardKey] || {
+    capacity_score: 65, flood_risk: 45, flood_events: 4,
+    system_age: 50, sewage_coverage: 70
+  }
+
+  const drainageFactor = (100 - drain.capacity_score) / 10
+  const floodFactor = drain.flood_risk / 10
+  const rainfallFactor = (rain.annual_avg - 600) / 100
+
+  let riskScore = (drainageFactor * 0.4 + floodFactor * 0.3 + rainfallFactor * 0.3) * 2
+  riskScore = Math.min(10, Math.max(1, parseFloat(riskScore.toFixed(1))))
+
+  let riskLevel = 'low'
+  if (riskScore >= 7) riskLevel = 'high'
+  else if (riskScore >= 4) riskLevel = 'medium'
+
+  let zone = 'central'
+  const nameLower = coord.wardName.toLowerCase()
+  if (nameLower.includes('north') || coord.lat > 28.7) zone = 'north'
+  else if (nameLower.includes('south') || coord.lat < 28.55) zone = 'south'
+  else if (nameLower.includes('east') || coord.lng > 77.25) zone = 'east'
+  else if (nameLower.includes('west') || coord.lng < 77.1) zone = 'west'
+  else if (nameLower.includes('ndmc') || nameLower.includes('cantt')) zone = 'new-delhi'
+
+  const mlConfidence = Math.min(95, Math.round(riskScore * 9 + 60))
+
+  return {
+    wardNo: coord.wardNo,
+    wardName: coord.wardName,
+    wardKey,
+    zone,
+    lat: coord.lat,
+    lng: coord.lng,
+    avgRainfall: rain.annual_avg,
+    drainageScore: parseFloat((drain.capacity_score / 10).toFixed(1)),
+    riskLevel,
+    riskScore,
+    mlConfidence,
+    historicalIncidents: drain.flood_events,
+    floodRisk: drain.flood_risk,
+    systemAge: drain.system_age,
+    sewageCoverage: drain.sewage_coverage,
+    lastUpdated: "2024-01-15"
+  }
+}
+
+export function generateAllWards() {
+  return actualWardCoordinates.map((coord, index) => {
+    let wardKey = ''
+    if (index < 8) wardKey = `DEL_CANTT_00${index + 1}`
+    else if (index < 17) wardKey = `DEL_NDMC_00${index - 7}`
+    else wardKey = `DEL_${coord.wardNo.toString().padStart(3, '0')}`
+
+    const rain = rainfallData[wardKey] || { annual_avg: 700, jan_2026: 15 }
+    const drain = drainageData[wardKey] || { capacity_score: 65, flood_risk: 45, flood_events: 4, system_age: 50, sewage_coverage: 70 }
+
+    const drainageFactor = (100 - drain.capacity_score)
+    const floodFactor = drain.flood_risk
+    const rainfallFactor = Math.min(100, (rain.annual_avg - 600) / 10)
+    const wardNum = parseInt(coord.wardNo) || 0
+    const variance = (wardNum % 7) * 4 + (wardNum % 3) * 6
+
+    let riskScore = (drainageFactor * 0.4 + floodFactor * 0.3 + rainfallFactor * 0.3) + variance
+    riskScore = Math.min(95, Math.max(8, parseFloat(riskScore.toFixed(1))))
+
+    let riskLevel = 'low'
+    if (riskScore >= 58) riskLevel = 'high'
+    else if (riskScore >= 32) riskLevel = 'medium'
+
+    let zone = 'central'
+    const nameLower = coord.wardName.toLowerCase()
+    if (nameLower.includes('north') || coord.lat > 28.7) zone = 'north'
+    else if (nameLower.includes('south') || coord.lat < 28.55) zone = 'south'
+    else if (nameLower.includes('east') || coord.lng > 77.25) zone = 'east'
+    else if (nameLower.includes('west') || coord.lng < 77.1) zone = 'west'
+    else if (nameLower.includes('ndmc') || nameLower.includes('cantt')) zone = 'new-delhi'
+
+    return {
+      wardNo: coord.wardNo, wardName: coord.wardName, wardKey, zone,
+      lat: coord.lat, lng: coord.lng,
+      avgRainfall: rain.annual_avg,
+      drainageScore: parseFloat((drain.capacity_score / 10).toFixed(1)),
+      riskLevel, riskScore,
+      mlConfidence: Math.min(95, Math.round(riskScore * 0.4 + 58)),
+      historicalIncidents: drain.flood_events,
+      floodRisk: drain.flood_risk, systemAge: drain.system_age,
+      sewageCoverage: drain.sewage_coverage, lastUpdated: '2024-01-15'
+    }
+  }).filter(Boolean)
+}
