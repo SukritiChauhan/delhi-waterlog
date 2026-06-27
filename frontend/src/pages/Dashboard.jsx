@@ -4,6 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import L from 'leaflet'
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts'
 import { generateAllWards } from '../data/wardData'
+import { fetchAllWardPredictions } from '../api/waterlogging'
 import 'leaflet/dist/leaflet.css'
 
 const RISK_COLORS = { high: '#ef4444', medium: '#f59e0b', low: '#22c55e' }
@@ -134,9 +135,22 @@ export default function Dashboard() {
 
   useEffect(() => {
     if (!user) { navigate('/login'); return }
-    const allWards = generateAllWards()
-    setWards(allWards)
-    setFiltered(allWards)
+    
+    const localWards = generateAllWards()
+    setWards(localWards)
+    setFiltered(localWards)
+    
+    // Fetch from live API and update
+    fetchAllWardPredictions(localWards).then(apiWards => {
+      if (apiWards && apiWards.length > 0) {
+        setWards(apiWards)
+        setFiltered(apiWards)
+        console.log('✅ Live API data loaded:', apiWards.length, 'wards')
+      } else {
+        console.log('⚠️ Using local fallback data')
+      }
+    })
+
     setComplaints(JSON.parse(localStorage.getItem('complaints') || '[]'))
     const t = setInterval(() => setAlertIdx(i => (i+1) % ALERTS.length), 4000)
     return () => clearInterval(t)

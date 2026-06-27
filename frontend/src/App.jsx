@@ -4,9 +4,12 @@ import Login from './pages/Login'
 import Dashboard from './pages/Dashboard'
 import Complaint from './pages/Complaint'
 
-function App() {
+function ProtectedRoute({ children }) {
   const user = JSON.parse(localStorage.getItem('user'))
+  return user ? children : <Navigate to="/login" />
+}
 
+function App() {
   return (
     <Routes>
       <Route path="/" element={<Landing />} />
@@ -14,7 +17,7 @@ function App() {
       <Route path="/complaint" element={<Complaint />} />
       <Route
         path="/dashboard"
-        element={user ? <Dashboard /> : <Navigate to="/login" />}
+        element={<ProtectedRoute><Dashboard /></ProtectedRoute>}
       />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
